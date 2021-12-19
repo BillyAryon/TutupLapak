@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/background">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_marginVertical="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/btnTambahProduk"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawablePadding="10dp"
+                android:paddingLeft="10dp"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:drawableEnd="@drawable/ic_add"
+                android:textStyle="bold"
+                android:textColor="@color/button"
+                android:textSize="15sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawablePadding="10dp"
+                android:gravity="center_horizontal"
+                android:layout_weight="10"
+                android:text="TutupLapak"
+                android:textStyle="bold"
+                android:textColor="@color/button"
+                android:textSize="15sp" />
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:id="@+id/txtLogout"
+                android:layout_height="match_parent"
+                android:drawablePadding="10dp"
+                android:gravity="right"
+                android:drawableEnd="@drawable/ic_logout"
+                android:layout_weight="18"
+                android:textStyle="bold"
+                android:textColor="@color/button"
+                android:textSize="15sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="DAFTAR PRODUK"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="40dp"
+                android:layout_marginVertical="10dp"
+                android:textColor="@color/button"
+                android:textSize="15sp" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnLaporan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:drawableTint="@color/background"
+                android:textStyle="bold"
+                android:text="Laporan"
+                android:backgroundTint="@color/button"
+                android:textColor="@color/background"
+                android:textSize="15sp" />
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"
+                android:paddingBottom="5dp"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_produk"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="0dp"
+                    android:paddingBottom="5dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linierLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ActivityLogin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:orientation="vertical"
+        android:paddingHorizontal="40dp"
+        android:paddingTop="50dp">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:drawableStart="@drawable/ic_cart"
+            android:id="@+id/textView11"
+            android:layout_marginHorizontal="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="40dp"
+            android:textStyle="bold"
+            android:text="TutupLapak"
+            android:textAlignment="center"
+            android:textColor="@color/button"
+            android:textSize="30sp"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginVertical="10dp"
+            app:boxBackgroundColor="@color/background"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_height="wrap_content"
+            app:startIconDrawable="@drawable/ic_user"
+            app:endIconMode="clear_text"
+            android:id="@+id/username"
+            app:hintTextColor="@color/button"
+            android:hint="Username"
+            app:boxStrokeColor="@color/button"
+            app:startIconTint="@color/button">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/nama_user"
+                android:layout_width="match_parent"
+                android:inputType="text"
+                android:textColor="@color/button"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginVertical="10dp"
+            app:boxBackgroundColor="@color/background"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_height="wrap_content"
+            app:startIconDrawable="@drawable/ic_email"
+            app:endIconMode="clear_text"
+            android:id="@+id/mail"
+            app:hintTextColor="@color/button"
+            android:hint="Email"
+            app:boxStrokeColor="@color/button"
+            app:startIconTint="@color/button">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email_user"
+                android:layout_width="match_parent"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/button"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginVertical="10dp"
+            app:boxBackgroundColor="@color/background"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_height="wrap_content"
+            app:startIconDrawable="@drawable/ic_phone"
+            app:endIconMode="clear_text"
+            android:id="@+id/hp"
+            app:hintTextColor="@color/button"
+            android:hint="Nomor HP"
+            app:boxStrokeColor="@color/button"
+            app:startIconTint="@color/button">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/nohp_user"
+                android:layout_width="match_parent"
+                android:inputType="number"
+                android:textColor="@color/button"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginVertical="10dp"
+            app:boxBackgroundColor="@color/background"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_height="wrap_content"
+            app:startIconDrawable="@drawable/ic_ktp"
+            app:endIconMode="clear_text"
+            android:id="@+id/ktp"
+            app:hintTextColor="@color/button"
+            android:hint="Nomor KTP"
+            app:boxStrokeColor="@color/button"
+            app:startIconTint="@color/button">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/noktp_user"
+                android:layout_width="match_parent"
+                android:inputType="number"
+                android:textColor="@color/button"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginVertical="10dp"
+            app:boxBackgroundColor="@color/background"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_height="wrap_content"
+            app:startIconDrawable="@drawable/ic_password"
+            android:id="@+id/pass"
+            app:hintTextColor="@color/button"
+            android:hint="Password"
+            app:passwordToggleEnabled="true"
+            app:boxStrokeColor="@color/button"
+            app:startIconTint="@color/button">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password_user"
+                android:layout_width="match_parent"
+                android:inputType="textPassword"
+                android:textColor="@color/button"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/button"
+            android:textStyle="bold"
+            android:text="R E G I S T R A S I "
+            android:textAlignment="center"
+            android:textColor="@color/background"
+            android:textSize="18sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/txtLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="LOGIN"
+                android:textColor="@color/button"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/klikAdmin"
+                app:layout_constraintEnd_toEndOf="@+id/btnLogin"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/klikAdmin"
+                app:layout_constraintTop_toTopOf="@+id/klikAdmin"
+                app:layout_constraintVertical_bias="0.0" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</ScrollView>

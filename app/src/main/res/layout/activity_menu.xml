@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/profile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="left"
+            android:backgroundTint="@android:color/white"
+            android:drawableLeft="@drawable/ic_user"
+            android:textStyle="bold"
+            android:textColor="@color/button"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:layout_weight="1"
+            android:textColor="@color/button"
+            android:textStyle="bold"
+            android:drawableEnd="@drawable/ic_logout" />
+    </LinearLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_marginBottom="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="65dp"
+        android:id="@+id/placeholderUsername"
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:text="Username"
+        android:textStyle="bold"
+        android:textColor="@color/button"
+        android:textSize="20dp" />
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_marginHorizontal="20dp"
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:text="SELAMAT BELANJA"
+        android:textColor="@color/button"
+        android:textSize="15sp" />
+
+
+
+
+
+    <LinearLayout
+            android:id="@+id/tampil"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="110dp"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycleView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:paddingBottom="10dp" />
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="20dp">
+        <com.google.android.material.button.MaterialButton
+            android:layout_weight="2"
+            android:id="@+id/btnKeranjangBelanja"
+            android:backgroundTint="@color/button"
+            android:layout_marginBottom="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/background"
+            android:text="Keranjang" />
+    </LinearLayout>
+
+
+</RelativeLayout>

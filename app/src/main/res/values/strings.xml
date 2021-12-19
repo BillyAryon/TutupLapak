@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TutupLapak</string>
+    <string-array name="kategori">
+        <item>Outfit</item>
+        <item>Food</item>
+        <item>Drink</item>
+        <item>Furniture</item>
+        <item>Elektronik</item>
+    </string-array>
+</resources>

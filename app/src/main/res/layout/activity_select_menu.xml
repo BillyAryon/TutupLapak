@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context=".MenuTransaksi.TambahSelectMenu">
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/backselectmenu"
+            android:padding="5dp"
+            android:layout_gravity="left"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:backgroundTint="@android:color/white"
+            android:drawableLeft="@drawable/ic_back"
+            android:text="KEMBALI"
+            android:textStyle="bold"
+            android:textColor="@color/button"
+            android:textSize="15sp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/namaProduk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:lineSpacingExtra="24sp"
+                android:maxLines="1"
+                android:text="Nama Menu"
+                android:textColor="@color/button"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+            <!--            android:inputType="textCapSentences"-->
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:id="@+id/fotoProduk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:scaleType="centerInside" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/background"
+            app:boxStrokeColor="@color/background"
+            app:endIconTint="@color/background"
+            app:startIconTint="@color/background">
+
+            <TextView
+                android:id="@+id/hargaProduk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="Harga Produk"
+                android:textColor="@color/button"
+                android:textColorHighlight="@color/button"
+                android:textColorHint="@color/background"
+                android:textColorLink="@color/background"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+
+            <!--            android:inputType="textCapSentences"-->
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:textColorHint="@color/background"
+            app:boxStrokeColor="@color/background"
+            app:endIconTint="@color/background"
+            app:startIconTint="@color/background">
+
+            <TextView
+                android:id="@+id/kategoriProduk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="Kategori Produk"
+                android:textColor="@color/button"
+                android:textColorHighlight="@color/button"
+                android:textColorHint="@color/background"
+                android:textColorLink="@color/background"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:textColorHint="@color/background"
+            app:boxStrokeColor="@color/background"
+            app:endIconTint="@color/background"
+            app:startIconTint="@color/background">
+
+            <TextView
+                android:id="@+id/subtotalProduk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="Total harga "
+                android:textColor="@color/button"
+                android:textColorHighlight="@color/button"
+                android:textColorHint="@color/background"
+                android:textColorLink="@color/background"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+          <LinearLayout
+              android:paddingVertical="10dp"
+              android:layout_marginVertical="10dp"
+              android:gravity="center"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:layout_marginTop="0dp">
+              <Button
+                  android:id="@+id/minusBtn"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="-"
+                  android:textColor="@color/button"
+                  android:textSize="30dp"
+                  android:background="@color/button"/>
+              <TextView
+                  android:id="@+id/jumlahItem"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="1"
+                  android:textSize="30dp"
+                  android:gravity="center"
+                  android:textColor="@color/button"
+                  android:layout_marginRight="20dp"
+                  android:layout_marginLeft="20dp">
+
+              </TextView>
+              <Button
+                  android:id="@+id/plusBtn"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="+"
+                  android:textColor="@color/button"
+                  android:textSize="30dp"
+                  android:background="@color/background"/>
+
+          </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+        <ImageButton
+            app:srcCompat="@drawable/ic_cart2"
+            android:backgroundTint="@color/button"
+            android:layout_marginRight="0dp"
+            android:layout_marginHorizontal="40dp"
+            android:id="@+id/btnSimpan"
+            android:layout_gravity="center_vertical|bottom|right|top"
+            style="@style/Base.Widget.AppCompat.Button.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/button"
+            android:textStyle="bold" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+</ScrollView>
